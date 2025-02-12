@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Flag from '../../ui/Flag';
 import Button from '../../ui/Button';
 
-import CheckOutButton from './CheckOutButton';
+import CheckoutButton from './CheckoutButton';
 import Tag from '../../ui/Tag';
 
 const StyledTodayItem = styled.li`
@@ -46,7 +46,7 @@ function TodayItem({ activity }) {
 					Check in
 				</Button>
 			)}
-			{status === 'checked-in' && <CheckOutButton bookingId={id} />}
+			{status === 'checked-in' && <CheckoutButton bookingId={id} />}
 		</StyledTodayItem>
 	);
 }
